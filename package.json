@@ -1,0 +1,27 @@
+{
+  "name": "voting-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jupiter221208/voting-contract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jupiter221208/voting-contract/issues"
+  },
+  "homepage": "https://github.com/jupiter221208/voting-contract#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "hardhat": "^2.25.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.0"
+  }
+}
