@@ -56,7 +56,8 @@ npx hardhat run scripts/deploy.ts --network sepolia
 ### Verify on Etherscan (Optional)
 
 ```bash
-npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS "Proposal A" "Proposal B" "Proposal C"
+npx hardhat verify --network sepolia --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
+# npx hardhat verify --network sepolia DEPLOYED_CONTRACT_ADDRESS "Proposal A" "Proposal B" "Proposal C"
 ```
 
 ## Contract Features
