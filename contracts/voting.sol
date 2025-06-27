@@ -28,7 +28,7 @@ contract Ballot {
     Proposal[] public proposals;
 
     /// Create a new ballot to choose one of `proposalNames`.
-    constructor(bytes32[] memory proposalNames) {
+    constructor(string[] memory proposalNames) {
         chairperson = msg.sender;
         voters[chairperson].weight = 1;
 
@@ -40,7 +40,7 @@ contract Ballot {
             // Proposal object and `proposals.push(...)`
             // appends it to the end of `proposals`.
             proposals.push(Proposal({
-                name: proposalNames[i],
+                name: bytes32(keccak256(bytes(proposalNames[i]))),
                 voteCount: 0
             }));
         }
